@@ -5,8 +5,7 @@
     <h1 id="head1" >Github-search</h1>
     <form action="" class="enter">
         <div class="form-group">
-            <input type="text" placeholder="enter username" class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
-        
+            <input type="text" placeholder="enter username" class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">        
         </div>
     </form>
     <div *ngIf="profile">
