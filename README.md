@@ -1,4 +1,4 @@
-# Profile
+# Gitsearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
@@ -10,12 +10,9 @@ Mike munene
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 ## project screenshot
-
 <img src="src/assets/screenshot1.png">
 landing page.
- 
-   <img src ="src/assets/screenshot2.png">
-landing page 2.
+
 
 ## Code scaffolding
 
