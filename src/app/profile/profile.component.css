@@ -1,0 +1,16 @@
+#head1{
+    text-align: center;
+    color: lightgreen;
+    background: black;
+    font-family: 'Lobster', cursive;
+}
+p{
+    font-family: 'Lobster', cursive;
+}
+#view{
+    font-family: 'Lobster', cursive;
+}
+#reps{
+    font-family: 'Lobster', cursive;
+    text-align: center;
+}

@@ -1,0 +1,77 @@
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lobster&display=swap" rel="stylesheet">
+<div class="container-fluid">
+    <h1 id="head1" >Github-search </h1>
+    <form action="" class="enter">
+        <div class="form-group">
+            <input type="text" placeholder="enter username" class="form-control"  [(ngModel)]="username" name="username" (keyup)="findProfile()">
+        
+        </div>
+    </form>
+    <div *ngIf="profile">
+            <div class="row">
+                <div class="col-sm-3">
+                    <img class="img" src="{{profile.avatar_url}}">
+                </div>
+                    
+             
+             
+                <div class="col-sm-3">
+                    <ul class="list-group">
+                        <li class="list-group-item" *ngIf="profile.hireable">{{profile.hireable}}</li>
+                        <li class="list-group-item" *ngIf="profile.email">{{profile.email}}</li>
+                     </ul>
+                </div>
+            </div>
+                <br>
+
+                
+                    <div>
+
+                        <p>
+                            <span class="label" class="btn btn-success"> {{profile.followers}} Followers</span>&nbsp;
+
+                            <span class="label" class="btn btn-success"> {{profile.following}} Following </span>&nbsp;
+
+                            <span class="label" class="btn btn-success"> {{profile.public_gists}} gists</span>&nbsp;
+
+                            <span class="label" class="btn btn-success"> {{profile.public_repos}} Repositories</span>
+                        </p>
+                           <ul class="list-group">
+                               <li class="list-group-item">Username:{{user.login}}</li>
+                                <li class="list-group-item">Location:{{Location.login}}</li>
+                                 <li class="list-group-item">Email:{{email.login}}</li>
+                               
+                               </ul>
+
+                            <p>
+                                <a href="{{profile.html_url}}"  class="btn btn-success">Explore github profile</a>
+                               
+                            </p>
+                            <h1 id="reps">Repositories.</h1>
+ 
+                    <div class="card" *ngFor="let repos of repos">
+                        <div class="card">
+                             <a href="{{repos.html_url}}" class="text-align-center" target="_blank"
+                                class="view btn btn-outline-success" id="view">View this repo on github</a>
+                           
+                            <div class=" text-center">
+                                <h2>{{repos.name}}</h2>
+                            </div>
+                            <div class="card-body">
+                                <p>
+                                    {{repos.description}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                            
+                        
+                            
+                            </div>
+                     
+                             
+                    </div>
+                </div>
+            
+ 
