@@ -1,4 +1,5 @@
-# Gitsearch
+# Project name 
+Gitsearch
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.19.
 
@@ -13,6 +14,11 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 <img src="src/assets/screenshot1.png">
 landing page.
 
+## BDD
+
+1 Displays git hub user profiles and repositories.
+2 Allows the user to explore the inputed user profiles on github.
+3 Displays user github details such as followers 
 
 ## Code scaffolding
 
@@ -25,9 +31,6 @@ Run `ng build` to build the project. The build artifacts will be stored in the `
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## BDD
-
 
 ## Running end-to-end tests
 
