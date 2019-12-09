@@ -12,6 +12,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## project screenshot
 
 <img src="src/assets/screenshot1.png">
+landing page.
 <img src="src/assets/screenshot2.png">
 
 ## Code scaffolding
